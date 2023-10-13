@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
+import GoogleProvider from 'next-auth/providers/google';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@firebase.config';
 
