@@ -1,4 +1,5 @@
 import '@styles/global.css';
+import Provider from './components/Provider';
 
 export const metadata = {
   title: 'Authentication',
@@ -9,7 +10,11 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
       <body>
-        <main>{children}</main>
+        <div>
+          <Provider>
+            <main>{children}</main>
+          </Provider>
+        </div>
       </body>
     </html>
   );
